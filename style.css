@@ -1,0 +1,49 @@
+body{
+    color: white;
+    background-color: black;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 300px;
+    background-color: aqua;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+}
+.contlayer1{
+    position: absolute;
+    top: 25%;
+    left:1px;
+    margin: 1px 3px 1px 3px;
+    transform: translate(-50,-50%);
+    padding: 2px 5px;
+}
+input{
+    height: 20px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+    display: inline;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 22%;
+    margin-bottom: 5px;
+    color: black;
+}
+label{
+    display: inline;
+    margin-top: 10px;
+    margin-left: 12%;
+}
+.buttons{
+    margin-top: 15%;
+    margin-left: 50%;
+}
+.result{
+    margin-top: 15%;
+    margin-left: 55%;
+}

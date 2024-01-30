@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buton</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 700px;
+            background-color: aqua;
+            border-radius: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .circle{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body id="bg">
+    <div class="container" onclick="chan()">
+        <div class="circle" id="moves">
+        </div>
+        <h1 id="cont"></h1>
+    </div>
+    <script>
+        var s= document.getElementById('moves');
+        var bs= document.getElementById('bg');
+        var texts = document.getElementById('cont');
+        move=0;
+        function chan(){
+        if(move==1){
+        s.style.marginLeft='400px';
+        s.style.transitionDuration='1s';
+        bs.style.backgroundColor='white';
+        bs.style.transitionDuration='1s';
+        texts.textContent='Day';
+        texts.style.marginLeft='100px';
+        move=0;
+
+        }
+        else{
+        s.style.marginLeft='0px';
+        s.style.transitionDuration='1s';
+        bs.style.backgroundColor='black';
+        bs.style.transitionDuration='1s';
+        texts.textContent='Night';
+        texts.style.marginLeft='500px';
+        move=1;
+
+        }
+    }
+    </script>
+</body>
+</html>
